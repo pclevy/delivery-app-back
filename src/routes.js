@@ -25,6 +25,7 @@ routes.get('/users', UserController.index)
 routes.post('/users', UserController.store)
 
 routes.get('/products', ProductController.index)
+routes.get('/products/:id', ProductController.show)
 routes.get('/products/:id/types', ProductController.listTypes)
 
 routes.get('/types/:id/prices', TypeController.listPrices)
